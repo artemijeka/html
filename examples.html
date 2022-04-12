@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>examples</title>
+</head>
+<body>
+  
+
+
+  <picture>
+    <!-- Приоритет у тех что идут сначала -->
+    <source type="image/svg+xml" media="(min-width: 992px)" srcset="images/logo.svg">
+    <source type="image/webp" media="(min-width: 992px)" srcset="images/logo.webp">
+    <source media="(min-width: 992px)" srcset="images/logo.png">
+    
+    <source type="image/svg+xml" media="(max-width: 991px) and (min-width: 671px)" srcset="images/logo-258.svg">
+    <source type="image/webp" media="(max-width: 991px) and (min-width: 671px)" srcset="images/logo-258.webp">
+    <source media="(max-width: 991px) and (min-width: 671px)" srcset="images/logo-258.png">
+
+    <source type="image/svg+xml" media="(max-width: 670px) and (min-width: 321px)" srcset="images/logo-280.svg">
+    <source type="image/webp" media="(max-width: 670px) and (min-width: 321px)" srcset="images/logo-280.webp">
+    <source media="(max-width: 670px) and (min-width: 321px)" srcset="images/logo-280.png">
+    
+    <source type="image/svg+xml" media="(max-width: 320px)" srcset="images/logo-258.svg">
+    <source type="image/webp" media="(max-width: 320px)" srcset="images/logo-258.webp">
+    <source media="(max-width: 320px)" srcset="images/logo-258.png">
+
+    <!-- Обязательно должно быть (для неподдерживающих браузеров и для роботов) -->
+    <img src="images/logo.png" alt="Логотип">
+  </picture>
+
+
+
+</body>
+</html>
